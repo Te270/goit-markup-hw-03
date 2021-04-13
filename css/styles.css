@@ -1,0 +1,208 @@
+:root {
+  --primary-text-color: #757575;
+  --section-title-color: #212121;
+  --accent-color: #2196f3;
+  --button-text-color: #ffffff;
+  --dark-accent-color: #000000;
+  --white-accent-color: #ffffff;
+
+  --dark-bcg-cl: #2f303a;
+  --button-bcg-cl: #f5f4fa;
+  --team-bcg-cl: #f5f4fa;
+}
+
+/* Стили для index.html */
+body {
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.site-contacts .link:hover,
+.site-contacts .link:focus,
+.address-contacts:hover,
+.address-contacts:focus {
+  color: var(--accent-color);
+}
+
+.accent {
+  color: var(--dark-accent-color);
+}
+/* Site nav */
+
+.site-nav .link {
+  color: var(--section-title-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+/* Site-contacts */
+
+.site-contacts .link {
+  color: var(--primary-text-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--dark-bcg-cl);
+  letter-spacing: 0.06em;
+}
+.hero-title {
+  color: var(--white-accent-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Section */
+
+.section-title {
+  color: var(--section-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Features */
+
+.features-list .title {
+  color: var(--section-title-color);
+}
+
+.section .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.section .specialty {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+/* Team */
+
+.team {
+  background-color: var(--team-bcg-cl);
+}
+
+.master .list {
+  color: var(--section-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.master-post {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* Button */
+
+.button,
+.button.primary {
+  background-color: var(--accent-color);
+}
+
+.button {
+  color: var(--button-text-color);
+}
+
+.button.primary {
+  color: var(--button-text-color);
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--dark-bcg-cl);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-location {
+  color: var(--button-text-color);
+  font-style: normal;
+}
+
+.address-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-accent {
+  color: var(--white-accent-color);
+}
+
+/* Стили для portfolio.html */
+
+.section .filters {
+  color: var(--section-title-color);
+  background-color: var(--button-bcg-cl);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.filters:hover,
+.filters:focus {
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
+}
+
+.section .caption {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.section .group {
+  font-size: 16px;
+  line-height: 1.87;
+}
