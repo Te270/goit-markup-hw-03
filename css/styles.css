@@ -11,6 +11,15 @@
   --team-bcg-cl: #f5f4fa;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 /* Стили для index.html */
 body {
   color: var(--primary-text-color);
@@ -19,10 +28,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid tomato;
+  background-color: #1add5b;
+}
 .list {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -70,18 +93,36 @@ body {
 /* Hero */
 
 .hero {
+  margin-bottom: 94px;
   background-color: var(--dark-bcg-cl);
   letter-spacing: 0.06em;
+  text-align: center;
+
+  outline: 2px solid rgb(51, 12, 102);
+  background-color: #b60909;
 }
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
   color: var(--white-accent-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
 }
 /* Section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  outline: 2px solid rgb(78, 150, 209);
+  background-color: #441839;
+}
+
+.title {
+  margin-bottom: 10px;
+}
 
 .section-title {
   color: var(--section-title-color);
@@ -94,16 +135,22 @@ body {
 /* Features */
 
 .features-list .title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: var(--section-title-color);
 }
 
 .section .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .section .specialty {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -143,6 +190,10 @@ body {
 
 .button {
   color: var(--button-text-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
 }
 
 .button.primary {
@@ -191,10 +242,18 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.filters {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  text-align: center;
+}
 .filters:hover,
 .filters:focus {
   color: var(--button-text-color);
   background-color: var(--accent-color);
+  border: 1px solid var(--dark-accent-color);
 }
 
 .section .caption {
