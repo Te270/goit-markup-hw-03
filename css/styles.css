@@ -37,8 +37,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid tomato;
 }
 
 .main-nav {
@@ -132,8 +130,6 @@ img {
 
   letter-spacing: 0.06em;
   text-align: center;
-
-  outline: 2px solid rgb(51, 12, 102);
 }
 .hero-title {
   margin-top: 0px;
@@ -151,8 +147,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  outline: 2px solid rgb(78, 150, 209);
 }
 
 .title {
